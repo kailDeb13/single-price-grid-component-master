@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  }
+  .flex {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 660px;
+  box-shadow: 0px 0px 3px darkgray;
+  border-radius: 6px;
+  }
+  .one {
+  background-color: hsl(204, 43%, 93%);
+  border-radius: 6px;
+  text-align: left;
+  padding-left:  1.6rem;
+  margin-bottom: 1.8rem;
+  }
+  .two {
+  border-radius: 0px 0px 5px 5px;
+  background-color:  hsl(179, 90%, 37%);
+  }
+  .three {
+  border-radius: 0px 0px 5px 5px;
+  text-align: left;
+  padding-left: 1.3rem;
+  background-color:  hsl(179, 62%, 43%);
+  }
+  h1 {
+  color:hsl(179, 62%, 43%);
+  font-weight: 700;
+  text-align: left;
+  margin-top: 20px;
+  }
+  h4 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 0.9rem;
+  font-weight: 700;
+  font-size: 18px;
+  }
+  .grayish-blue {
+    color: hsl(218, 22%, 67%);
+  }
+  h2 {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  }
+  .two-three {
+  display: flex;
+  justify-content: center;
+  }
+  .three, .two {
+  width: 50%;
+  }
+   .two p, .three p {
+  color:hsl(204, 43%, 93%);
+  }
+  .d {
+  color:hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 22px;
+  }
+  .per {
+  color: hsl(218, 22%, 67%);
+  margin-left: 3px;
+  text-shadow: 0px 0px 2px gray;
+  }
+  .two p {
+  margin-top: 5px;
+  }
+  button {
+  margin-bottom:   1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+ width: 72%;
+ padding: 15px 5px;
+  background-color:  hsl(71, 73%, 54%);
+  border: none;
+  box-shadow: 0px 0px 2px gray;
+  border-radius: 4px;
+  text-align: center;
+  color:hsl(204, 43%, 93%);
+  font-size: 17px;
+  }
+  .three p {
+  line-height: 25px;
+  }
+  p {
+  font-size: 15px;
+  }
+ 
+  @media  (max-width: 500px) {
+  .three, .two {
+  width: 100%;
+  }
+  .two-three {
+flex-direction: column;
+  }
+ .three {
+padding-left: 0;
+ }
+  .three p {
+  line-height: 23px;
+  }
+  .two h2 {
+  margin-bottom: 8px;
+  }
+.one p {
+margin-bottom: 0;
+}
+button {
+padding: 11px 5px;
+}
+  }
+  </style>
+</head>
+<body>
+  <div class="flex">
+  <div class="one">
+  <h1>Join our community</h1>
+
+  <h4>30-day, hassle-free money back guarantee</h4>
+<div class="grayish-blue">
+  <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+  <p>Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+</div>
+<div class="two-three">
+<div class="two">
+  <h2>Monthly Subscription</h2>
+
+  <span class="d">&dollar;29</span><span class="per">   per month</span>
+
+  <p>Full access for less than &dollar;1 a day</p>
+  <button>Sign Up</button>
+</div>
+<div class="three">
+  <h2>Why Us</h2>
+
+  <p>Tutorials by industry experts
+  Peer &amp; expert code review
+  Coding exercises
+  Access to our GitHub repos
+  Community forum
+  Flashcard decks
+  New videos every week</p>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
